@@ -1,0 +1,105 @@
+import React from 'react';
+import '../css_templates/Homepage.css'; // Import CSS file for styling
+
+const Homepage = () => {
+  
+    // State to store the fetched posts
+    // const [posts, setPosts] = useState([]);
+  
+    // Fetch data from the API when the component mounts
+    // useEffect(() => {
+    //   fetchPosts(); // Function to fetch posts
+    // }, []);
+  
+    // Function to fetch posts from the API
+    // const fetchPosts = async () => {
+    //   try {
+    //     // Make API call to fetch posts
+    //     const response = await fetch('/api/posts');
+    //     const data = await response.json();
+    //     setPosts(data.posts); // Update state with fetched posts
+    //   } catch (error) {
+    //     console.error('Error fetching posts:', error);
+    //   }
+    // };
+  
+
+  return (
+    <div className="dashboard">
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search..."
+          // onChange={onChange}
+          className="search-input"
+        />
+        <button className="search-button">Search</button>
+      </div>
+      <section className="section">
+        <h2 className="h2">Recents</h2>
+        {/* Recent content */}
+        <div className="content">
+          {/* Content items */}
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          {/* Add more content items */}
+        </div>
+        {/* More button */}
+        <button className="more-button">More</button>
+      </section>
+
+      <section className="section">
+        <h2 className="h2">Resources</h2>
+        {/* Resource content */}
+        <div className="content">
+          {/* Content items */}
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          {/* Add more content items */}
+        </div>
+        {/* More button */}
+        <button className="more-button">More</button>
+      </section>
+
+      <section className="section">
+        <h2 className="h2">Flashcards</h2>
+        {/* Flashcard content */}
+        <div className="content">
+          {/* Content items */}
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          {/* Add more content items */}
+        </div>
+        {/* More button */}
+        <button className="more-button">More</button>
+      </section>
+
+      <section className="section">
+        <h2 className="h2">Quizzes</h2>
+        {/* Quiz content */}
+        <div className="content">
+          {/* Content items */}
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          <div className="content-item"></div>
+          {/* Add more content items */}
+        </div>
+        {/* More button */}
+        <button className="more-button">More</button>
+      </section>
+    </div>
+  );
+};
+
+export default Homepage;

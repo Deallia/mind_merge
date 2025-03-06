@@ -1,0 +1,82 @@
+.pomodoro-timer {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 10vh; */
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(221, 222, 141);
+    justify-content: center;
+    padding: 20rem;
+  }
+  .heading{
+    text-align: center;
+    margin-bottom: 100px;;
+  }
+ 
+  #sub-container{
+    display:flex;
+    padding:2rem 3rem;
+    justify-content: center;
+  }
+  .input-fields {
+    margin-bottom: 20px;
+  }
+  
+  .input-fields label {
+    margin-right: 10px;
+  }
+  
+  .input-fields input {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .timer-display {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    
+  }
+  
+  .progress-bar {
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar > div {
+    height: 100%;
+    background-color: #4caf50;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .controls button {
+    margin: 0 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width:max-content;
+  }
+  
+  .controls button:hover {
+    background-color: #45a049;
+  }
+  
+  .controls button:disabled {
+    background-color: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+  }
+  

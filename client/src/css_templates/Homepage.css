@@ -1,0 +1,156 @@
+body {
+  background-color: #9ce7dd;
+  padding: 0px;
+}
+
+.dashboard {
+  padding: 90px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.recents-section {
+  width: 100%;
+  
+}
+
+.resources-section{
+  margin-top: 30px;
+  max-width: 1200px;
+}
+
+ .content-items{
+  display: flex;
+  flex-direction: row; 
+  gap: 40px;
+  
+
+}
+.recents-section .content-items{
+ overflow-x: scroll;
+
+
+}
+
+.recents-section .content-item{
+  flex: 0 0 calc(25.33% - 50px);
+}
+
+.resources-section .content-items{
+  flex-wrap: wrap;
+ 
+ }
+
+ .content-item {
+    position: relative;
+    flex: 0 0 calc(33.33% - 50px);
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-bottom: 1px solid rgb(181, 181, 181);
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+ 
+    
+}
+
+
+.content-item img {
+  width: 75%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  }
+.recents-section .content-item img {
+  width: 55%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recents-section .filename {
+  width: 55%;
+  height: auto;
+  cursor: pointer;
+}
+
+.filename {
+  background-color: #3e2546;
+  width: 75%;
+  padding: 10px;
+  word-wrap: break-word;
+  align-self: center;
+  text-align: center;
+}
+
+.filename p {
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+
+.filename:hover{
+ background-color: #c480db;
+}
+
+.content-item img:hover + .filename{
+  
+  background-color: #c480db; 
+ }
+
+#bookmark  :hover {
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 500px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left:-7px;
+  margin-bottom: 19px;
+ 
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+h6{
+  text-align: right;
+  margin-right: 25%;
+}
+
+#views{
+  align-self: baseline;
+}
+
+#bookmark{
+  justify-self: baseline;
+}

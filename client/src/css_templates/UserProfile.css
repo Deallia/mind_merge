@@ -1,0 +1,62 @@
+.user-profile {
+    
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 100px 100px;
+    max-width: 1500px;
+   
+  }
+
+  section{
+    width: 1200px;
+    background-color: #726b906b;
+  }
+  
+  #my-post:hover, #my-bookmark:hover{
+    cursor: pointer;
+    color: #4f4fd5;
+  }
+
+  .toggle-post{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+   padding-top:35px;
+  }
+
+  .post-section, .bookmarks-section{
+    max-width: 100%;
+    max-height: 500px;
+    font-size: smaller;
+    overflow-y: scroll;
+  }
+
+  .post-section .content-items, .bookmarks-section .content-items{
+      flex:1;
+      flex-wrap: wrap;
+      gap:30px;
+      padding: 10px;
+      justify-content: center;
+  }
+
+  .post-section .content-item, .bookmarks-section .content-item{
+    flex: 0 0 calc(40.33% - 2px);
+    white-space-collapse:collapse;
+    height: 30rem;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+  }
+
+  .post-section .filename, .bookmarks-section .filename{
+    width: 12rem;
+  }
+  .post-section .content-item img, .bookmarks-section .content-item img {
+    width: 12rem;
+    height: 9rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
